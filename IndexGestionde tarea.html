@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en jQuery</title>
+
+    <!-- jQuery desde CDN de Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Archivo JS -->
+    <script src="app.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        button {
+            margin: 8px 0;
+            padding: 10px 20px;
+            border: none;
+            background: #0d6efd;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0b5ed7;
+        }
+        #mouseBtn {
+            transition: transform .2s ease;
+        }
+        form {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input {
+            padding: 8px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Eventos en jQuery</h1>
+
+    <button id="clickBtn">Hacer clic</button>
+    <button id="dblclickBtn">Doble clic</button>
+    <button id="mouseBtn">Mover mouse</button>
+    <button id="keyBtn">Presionar tecla</button>
+    <button id="formBtn">Enviar formulario</button>
+
+    <p id="textoTecla" style="font-weight: bold; margin-top: 10px;"></p>
+
+    <form id="miFormulario">
+        <input type="text" id="inputTexto" placeholder="Escribe algo...">
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
